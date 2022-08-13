@@ -1,0 +1,16 @@
+version: 1
+kind: notebook
+environment:
+  resources:
+    cpu:
+      requests: 2
+      limits: 4
+    memory:
+      requests: 512
+      limits: 2048
+build:
+  image: tensorflow/tensorflow:1.4.1-py3
+  steps:
+    - pip3 install scikit-learn
+    - pip3 install jupyter
+    
